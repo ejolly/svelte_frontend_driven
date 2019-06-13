@@ -19,7 +19,7 @@ module.exports = {
 		rules: [
 			{
 				test: /\.svelte$/,
-				exclude: /node_modules/,
+				// exclude: /node_modules/, // routing only works when removing this line
 				use: {
 					loader: 'svelte-loader',
 					options: {
@@ -55,5 +55,8 @@ module.exports = {
 			filename: '[name].css'
 		})
 	],
-	devtool: prod ? false: 'source-map'
+	devtool: prod ? false: 'source-map',
+	devServer: {
+		historyApiFallback: true
+	}
 };
