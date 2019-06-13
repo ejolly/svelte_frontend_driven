@@ -1,7 +1,7 @@
 <script>
 import { onMount } from 'svelte'
 export let router
-import RouterLink from 'svelte-easyroute-webpack/RouterLink.svelte'
+import RouterLink from '!!svelte-loader!svelte-easyroute-webpack/RouterLink.svelte'
 
 onMount(()=> {
 	router.createOutlet()

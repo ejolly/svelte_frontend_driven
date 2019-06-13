@@ -19,7 +19,7 @@ module.exports = {
 		rules: [
 			{
 				test: /\.svelte$/,
-				// exclude: /node_modules/, // routing only works when removing this line
+				exclude: /node_modules/, 
 				use: {
 					loader: 'svelte-loader',
 					options: {
