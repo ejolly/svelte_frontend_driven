@@ -12,6 +12,6 @@ onMount(()=> {
 </style>
 
 <div id="router-outlet">
-	<!-- <RouterLink to="/" text={"Home"} />
-	<RouterLink to="/about" text={"About"} /> -->
+	<RouterLink to="/" text={"Home"} />
+	<RouterLink to="/about" text={"About"} />
 </div>
